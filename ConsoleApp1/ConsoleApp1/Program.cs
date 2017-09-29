@@ -36,7 +36,7 @@ namespace ConsoleApp1
                         continue;
                     }
 
-                    Console.WriteLine("Question 2: Would this succesfully convert a string to a double in C#: " +
+                   Console.WriteLine("Question 2: Would this succesfully convert a string to a double in C#: " +
                         "Convert.ToDouble(Console.ReadLine()) (enter yes or no)"
                          );
                     var answer2 = Console.ReadLine();
@@ -47,9 +47,9 @@ namespace ConsoleApp1
                         {
                             RightAnswers = 2;
                         }
-                        else if (RightAnswers == 0)
+                        else
                         {
-                            RightAnswers = 1;
+                            RightAnswers = 1; 
                         }
 
 
@@ -76,7 +76,7 @@ namespace ConsoleApp1
                         {
                             RightAnswers = 1;
                         }
-                        else if (RightAnswers == 2)
+                        else
                         {
                             RightAnswers = 3;
                         }
@@ -94,14 +94,9 @@ namespace ConsoleApp1
                         {
                             WrongAnswers = 1;
                         }
-                        else if (WrongAnswers == 2)
-                        {
-                            WrongAnswers = 3;
-                        }
                         else
                         {
-                            Console.WriteLine("Error");
-                            continue;
+                            WrongAnswers = 3;
                         }
                     }
                     else
@@ -122,7 +117,7 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("Sorry you go 0%");
                     }
-                    else if (RightAnswers == 1)
+                    else
                     {
                         Console.WriteLine("You got 33%");
                     }
